@@ -1,0 +1,71 @@
+# bubu-studio.com auf Netlify — statische Site, kein Build.
+# Ersetzt das bisherige Hosting bei Hostinger (Apache).
+
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# www kanonisch auf die Apex-Domain
+[[redirects]]
+  from = "https://www.bubu-studio.com/*"
+  to = "https://bubu-studio.com/:splat"
+  status = 301
+  force = true
+
+# Die Workshop-Seite wurde nicht migriert, sie lebt jetzt auf www.bubu-tufting.com.
+# 301 statt 404, damit Google den alten Eintrag aus dem Index nimmt und die Signale weitergibt.
+[[redirects]]
+  from = "/tufting"
+  to = "https://www.bubu-tufting.com/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tufting.html"
+  to = "https://www.bubu-tufting.com/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tufting/*"
+  to = "https://www.bubu-tufting.com/"
+  status = 301
+  force = true
+
+# Alte saubere Journal-Adressen von Hostinger auf die echten Dateien.
+# Einzeln statt /journal/*, weil Netlify sonst auch /journal selbst matcht.
+[[redirects]]
+  from = "/journal/what-is-drip-tufting"
+  to = "/journal-what-is-drip-tufting.html"
+  status = 301
+
+[[redirects]]
+  from = "/journal/liquid-mountains-story"
+  to = "/journal-liquid-mountains-story.html"
+  status = 301
+
+[[redirects]]
+  from = "/journal/drip-check-dan-lam"
+  to = "/journal-drip-check-dan-lam.html"
+  status = 301
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301

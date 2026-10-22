@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BUBU Radio — Coming soon</title>
+<meta name="description" content="BUBU Radio. Make kids smile. Bald auf bubu-radio.de." />
+<meta name="robots" content="noindex, nofollow" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<style>
+  :root {
+    --bg: #FFF3E9;
+    --ink: #E8794A;
+    --soft: #B98A6F;
+  }
+  * { box-sizing: border-box; }
+  ::selection { background: var(--ink); color: var(--bg); }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    text-align: center;
+    padding: 24px;
+  }
+  main { max-width: 420px; }
+  img.sticker {
+    width: min(300px, 70vw);
+    height: auto;
+    display: block;
+    margin: 0 auto 26px;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    margin: 0 0 4px;
+  }
+  .tag {
+    font-size: 0.95rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 0 30px;
+  }
+  .soon {
+    font-size: 1.15rem;
+    margin: 0 0 6px;
+    font-weight: 600;
+  }
+  .domain { color: var(--soft); font-size: 0.95rem; margin: 0 0 40px; }
+  a.back {
+    color: var(--ink);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  a.back:hover { text-decoration-thickness: 2px; }
+  a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+</style>
+</head>
+<body>
+<main>
+  <img class="sticker" src="bubu-radio-sticker.png" alt="BUBU Radio, illustrierte Radiomaschine" />
+  <h1>BUBU Radio</h1>
+  <p class="tag">Make kids smile</p>
+  <p class="soon">Coming soon.</p>
+  <p class="domain">Bald auf bubu-radio.de</p>
+  <a class="back" href="index.html">Zurück zu BUBU Studio</a>
+</main>
+</body>
+</html>
