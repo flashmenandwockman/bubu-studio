@@ -14,9 +14,13 @@ Supabase wird hier nicht gebraucht: Die Seite hat keine Formulare und keine Date
 
 Die frühere Seite `/tufting` wurde bewusst nicht übernommen. `/tufting`, `/tufting.html` und `/tufting/*` leiten per 301 auf https://www.bubu-tufting.com, alle Workshop-Links zeigen direkt dorthin. Aus `sitemap.xml` und `llms.txt` ist sie entfernt.
 
+## Journal
+
+Die Übersichtsseite `journal.html` ist gelöscht. `/journal` und `/journal.html` leiten per 301 auf https://www.bubu-tufting.com/journal/, alle Journal-Links zeigen dorthin. Die drei Artikel bleiben hier, weil es sie auf bubu-tufting.com nicht gibt.
+
 ## Struktur
 
-- `index.html`, `work.html`, `journal.html`, `journal-*.html`, `impressum.html`, `bubu-radio.html`
+- `index.html`, `work.html`, `journal-*.html` (die drei Artikel), `impressum.html`, `bubu-radio.html`
 - `styles.css`, `work.css`, `styles/bubu-music.css`, `script.js`, `data.js` (Bildtexte der Galerie, ohne HTML editierbar)
 - `assets/` — Bilder, `assets/gallery/` für die Galerie auf `/work`
 - `sitemap.xml`, `robots.txt`, `llms.txt`

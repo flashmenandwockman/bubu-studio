@@ -48,6 +48,19 @@
   status = 301
   force = true
 
+# Die Journal-Übersicht wurde gelöscht, das Journal lebt jetzt auf bubu-tufting.com.
+[[redirects]]
+  from = "/journal"
+  to = "https://www.bubu-tufting.com/journal/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/journal.html"
+  to = "https://www.bubu-tufting.com/journal/"
+  status = 301
+  force = true
+
 # Alte saubere Journal-Adressen von Hostinger auf die echten Dateien.
 # Einzeln statt /journal/*, weil Netlify sonst auch /journal selbst matcht.
 [[redirects]]
