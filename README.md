@@ -4,7 +4,9 @@ Website von BUBU Studio (Jan Fechner, Liquid Mountains, drip tufting). Statische
 
 ## Deployment
 
-Netlify, eigene Site neben `bubu-tufting`. Deploy per `netlify deploy --prod --dir .` aus diesem Ordner. Konfiguration in `netlify.toml` (Header, Redirects).
+Netlify-Site `bubu-studio` (Team Flashmen and Wockman Ltd.), mit diesem Repo verbunden: jeder Push auf `main` geht automatisch live. Domains `bubu-studio.com` (primär) und `www.bubu-studio.com`. Vorschau: https://bubu-studio.netlify.app. Konfiguration in `netlify.toml` (Header, Redirects).
+
+DNS liegt nicht bei Netlify (Nameserver `ns1/ns2.de-nserver.de`). Für den Umzug dort `A @ → 75.2.60.5` und `CNAME www → bubu-studio.netlify.app` setzen. `mail.bubu-studio.com` (A auf den alten Server) und der MX-Eintrag bleiben unverändert, sonst geht die Mail verloren.
 
 Supabase wird hier nicht gebraucht: Die Seite hat keine Formulare und keine Daten, Kontakt läuft per Mail. Buchungen, Newsletter und Anfragen liegen in Supabase beim Projekt `bubu-tufting`.
 
