@@ -48,9 +48,10 @@
   status = 301
   force = true
 
-# Die Journal-Übersicht wurde gelöscht, das Journal lebt jetzt auf bubu-tufting.com.
+# Das Journal (Übersicht und alle Artikel) lebt jetzt auf bubu-tufting.com.
+# /journal/* deckt auch /journal selbst und /journal/ ab.
 [[redirects]]
-  from = "/journal"
+  from = "/journal/*"
   to = "https://www.bubu-tufting.com/journal/"
   status = 301
   force = true
@@ -61,22 +62,11 @@
   status = 301
   force = true
 
-# Alte saubere Journal-Adressen von Hostinger auf die echten Dateien.
-# Einzeln statt /journal/*, weil Netlify sonst auch /journal selbst matcht.
 [[redirects]]
-  from = "/journal/what-is-drip-tufting"
-  to = "/journal-what-is-drip-tufting.html"
+  from = "/journal-*"
+  to = "https://www.bubu-tufting.com/journal/"
   status = 301
-
-[[redirects]]
-  from = "/journal/liquid-mountains-story"
-  to = "/journal-liquid-mountains-story.html"
-  status = 301
-
-[[redirects]]
-  from = "/journal/drip-check-dan-lam"
-  to = "/journal-drip-check-dan-lam.html"
-  status = 301
+  force = true
 
 [[redirects]]
   from = "/index.html"

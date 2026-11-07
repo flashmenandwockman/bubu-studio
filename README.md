@@ -16,11 +16,11 @@ Die frühere Seite `/tufting` wurde bewusst nicht übernommen. `/tufting`, `/tuf
 
 ## Journal
 
-Die Übersichtsseite `journal.html` ist gelöscht. `/journal` und `/journal.html` leiten per 301 auf https://www.bubu-tufting.com/journal/, alle Journal-Links zeigen dorthin. Die drei Artikel bleiben hier, weil es sie auf bubu-tufting.com nicht gibt.
+Das Journal lebt komplett auf https://www.bubu-tufting.com/journal/. Übersicht und alle Artikel sind hier gelöscht, `/journal`, `/journal/*`, `/journal.html` und `/journal-*` leiten per 301 dorthin.
 
 ## Struktur
 
-- `index.html`, `work.html`, `journal-*.html` (die drei Artikel), `impressum.html`, `bubu-radio.html`
+- `index.html`, `work.html`, `impressum.html`, `bubu-radio.html`
 - `styles.css`, `work.css`, `styles/bubu-music.css`, `script.js`, `data.js` (Bildtexte der Galerie, ohne HTML editierbar)
 - `assets/` — Bilder, `assets/gallery/` für die Galerie auf `/work`
 - `sitemap.xml`, `robots.txt`, `llms.txt`
